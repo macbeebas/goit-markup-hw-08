@@ -1,0 +1,38 @@
+/* SASS - _page-main-header.scss - v */
+.page-main-header {
+  border: 1px solid $black;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  background-color: $background-black;
+  height: 600px;
+  display: flex;
+  background-image: linear-gradient(
+      to top,
+      $background-black-40opa,
+      $background-black-40opa
+    ),
+    url("../images/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    margin: 0 0 30px;
+  }
+}
+/* SASS - _page-main-header.scss - ^ */

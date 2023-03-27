@@ -1,0 +1,32 @@
+/* SASS - _our-clients.scss - v */
+.our-clients {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    list-style-type: none;
+    margin: 50px auto auto;
+    padding-inline-start: 0;
+  }
+
+  &__item {
+    border: 1px solid $gray-clients;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $gray-clients;
+    width: 170px;
+    height: 92px;
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /* CUBIC */
+  &__item:hover,
+  &__item:focus {
+    border: 1px solid $blue;
+    fill: $blue;
+  }
+}
+/* SASS - _our-clients.scss - ^ */

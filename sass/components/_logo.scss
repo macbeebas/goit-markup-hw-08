@@ -1,0 +1,20 @@
+/* SASS - _logo.scss - v */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  color: $blue;
+  margin-right: 47px;
+  width: fit-content;
+
+  &--black-font {
+    color: $black;
+  }
+
+  &--white-font {
+    color: $white;
+  }
+}
+/* SASS - _logo.scss - ^ */

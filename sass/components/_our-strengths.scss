@@ -1,0 +1,46 @@
+/* SASS - _our-strengths.scss - v */
+.our-strengths {
+  &__list {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    display: flex;
+    gap: 15px;
+    background-color: $white;
+    list-style-type: none;
+    margin: auto;
+    padding-inline-start: 0;
+  }
+
+  &__feature-box {
+    background-color: $gray-light;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /* CUBIC */
+  &__feature-box:hover,
+  &__feature-box:focus {
+    box-shadow: 0px 4px 4px $black-25opa;
+  }
+
+  &__header {
+    color: $black-main;
+    margin: auto auto 5px;
+  }
+
+  &__text {
+    line-height: 1.71;
+    color: $gray;
+    text-transform: none;
+    margin: 10px auto auto;
+  }
+}
+/* SASS - _our-strengths.scss - ^ */

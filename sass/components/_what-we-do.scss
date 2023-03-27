@@ -1,0 +1,29 @@
+/* SASS - _what-we-do.scss - v */
+.what-we-do {
+  background-color: $white;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto auto;
+    background-color: $white;
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+
+  &__label {
+    display: flex;
+    transform: translate(0, -74px);
+    width: 370px;
+    height: 70px;
+    background-color: $background-black-80opa;
+    color: $white;
+    font-weight: 700;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+/* SASS - _what-we-do.scss - ^ */
