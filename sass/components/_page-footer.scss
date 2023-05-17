@@ -1,5 +1,5 @@
 /* SASS - _page-footer.scss - v */
-.page-footer {
+.footer {
   background-color: $background-black;
   height: 252px;
   margin: auto;
@@ -73,7 +73,7 @@
     color: $white;
   }
 
-  &__social-links-list {
+  &__social-list {
     display: flex;
     justify-content: space-between;
     margin: 20px auto auto;
@@ -83,7 +83,7 @@
     padding-inline-start: 0;
   }
 
-  &__social-links-icon {
+  &__social-icon {
     border-radius: 22px;
     display: flex;
     width: 44px;
@@ -97,8 +97,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   /* CUBIC */
-  &__social-links-icon:hover,
-  &__social-links-icon:focus {
+  &__social-icon:hover,
+  &__social-icon:focus {
     background-color: $blue;
   }
 

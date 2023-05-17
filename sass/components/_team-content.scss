@@ -1,5 +1,5 @@
 /* SASS - _team-content.scss - v */
-.team-content {
+.team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -65,7 +65,7 @@
     padding-inline-start: 0;
   }
 
-  &__social-links-icon {
+  &__social-icon {
     border-radius: 50%;
     display: flex;
     width: 44px;
@@ -78,8 +78,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   /* CUBIC */
-  &__social-links-icon:hover,
-  &__social-links-icon:focus {
+  &__social-icon:hover,
+  &__social-icon:focus {
     background-color: $blue;
     fill: $white;
   }

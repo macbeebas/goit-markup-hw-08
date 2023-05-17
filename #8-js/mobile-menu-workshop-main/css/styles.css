@@ -25,6 +25,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  border: 1px solid orange;
 }
 
 .menu {
@@ -62,20 +63,25 @@ body {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
-  border: none;
+  /* border: none; */
+  border: 3px solid red;
+
   border-radius: 50%;
-  outline: none;
+  /* outline: none; */
+  outline: 3px solid green;
+
 }
 
 @media (min-width: 768px) {
   .menu-toggle {
-    display: none;
+    /* display: none; */
   }
 }
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: blue;
 }
 
 .menu-container {
@@ -100,7 +106,8 @@ body {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  /* color: #fff; */
+  color: yellow;
 }
 
 .mobile-menu {
