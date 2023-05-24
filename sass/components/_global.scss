@@ -9,23 +9,67 @@
 }
 
 .container {
+  // --- Mobile first - v ---
   margin: 0 auto;
-  width: $container-width;
+  width: $width--mobile;
+  background-color: green;
+  outline: 1px dashed gray;
+  // pomocniczy - zmienia się w zależności od punktu przerwania
+  // --- Mobile first - ^ ---
+
+  // --- Tablet - v ---
+  @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+    width: $width--tablet;
+    background-color: blue;
+    // pomocniczy - zmienia się w zależności od punktu przerwania
+  }
+  // --- Tablet - ^ ---
+
+  // --- Desktop - v ---
+  @media screen and (min-width: $width--desktop) {
+    width: $width--desktop;
+    background-color: pink;
+    // pomocniczy - zmienia się w zależności od punktu przerwania
+  }
+  // --- Desktop - ^ ---
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // --- Tablet - v ---
+  // --- same as in mobile ---
+  // @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {}
+  // --- Tablet - ^ ---
+
+  // --- Desktop - v ---
+  @media screen and (min-width: $width--desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  // --- Desktop - ^ ---
 }
 
 .second-header {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   margin-block-start: 0;
   margin-block-end: 0;
   color: $black-main;
+
+  // --- Tablet - v ---
+  // --- same as in mobile ---
+  // @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {}
+  // --- Tablet - ^ ---
+
+  // --- Desktop - v ---
+  @media screen and (min-width: $width--desktop) {
+    font-size: 36px;
+  }
+  // --- Desktop - ^ ---
 }
 
 .backdrop {

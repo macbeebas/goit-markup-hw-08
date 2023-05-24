@@ -1,7 +1,6 @@
 /* SASS - _page-header.scss - v */
 .header {
   margin: auto;
-  border: 1px solid $black;
   border-bottom: 1px solid $background;
 
   &__box {
@@ -11,12 +10,23 @@
   }
 
   &__box-nav-list {
-    display: flex;
+    display: none;
     align-items: center;
-    background-color: $white;
     list-style-type: none;
     margin: auto;
     padding-inline-start: 0;
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      display: flex;
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      display: flex;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__nav {
@@ -47,7 +57,7 @@
   &__nav--active::after {
     content: "";
     position: absolute;
-    top: 78px;
+    top: 77px;
     width: 60px;
     height: 4px;
     border-radius: 2px;
@@ -55,17 +65,36 @@
   }
 
   &__contacts {
-    display: flex;
-    background-color: $white;
-    list-style-type: none;
-    margin: auto 0 auto auto;
-    padding-inline-start: 0;
+    display: none;
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      display: inline;
+      list-style-type: none;
+      margin: auto;
+      margin-right: 0;
+      padding-right: 15px;
+      padding-inline-start: 0;
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      display: flex;
+      gap: 30px;
+      list-style-type: none;
+      margin: auto;
+      margin-right: 0;
+      padding-right: 27px;
+      padding-inline-start: 0;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__link {
     display: flex;
     align-items: center;
-    margin: 31px 0px 31px 30px;
+    margin: 10px 0px;
     text-decoration: none;
     fill: $gray;
     color: $gray;

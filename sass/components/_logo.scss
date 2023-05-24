@@ -1,13 +1,17 @@
 /* SASS - _logo.scss - v */
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.1667;
   text-decoration: none;
   color: $blue;
-  margin-right: 47px;
-  width: fit-content;
+  padding: 16px 0px;
+  // margin-right: 47px;
+  margin: auto 15px;
+  // margin-left: 15px;
 
   &--classic {
     color: $black;
@@ -16,5 +20,18 @@
   &--inverse {
     color: $white;
   }
+
+  // --- Tablet - v ---
+  @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+    padding: 26px 0px;
+  }
+  // --- Tablet - ^ ---
+
+  // --- Desktop - v ---
+  @media screen and (min-width: $width--desktop) {
+    padding: 26px 0px;
+  }
+  // --- Desktop - ^ ---
+
+  /* SASS - _logo.scss - ^ */
 }
-/* SASS - _logo.scss - ^ */

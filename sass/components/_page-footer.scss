@@ -1,23 +1,77 @@
 /* SASS - _page-footer.scss - v */
 .footer {
   background-color: $background-black;
-  height: 252px;
+  height: 603px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
+  // --- Tablet - v ---
+  @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+    height: 463px;
+  }
+  // --- Tablet - ^ ---
+
+  // --- Desktop - v ---
+  @media screen and (min-width: $width--desktop) {
+    height: 252px;
+  }
+  // --- Desktop - ^ ---
+
   &__box {
-    display: flex;
+    display: inline-flex;
+    text-align: center;
+    flex-wrap: wrap;
     background-color: $background-black;
     list-style-type: none;
     margin: auto;
     padding-inline-start: 0;
+
+    // --- Tablet - v ---
+    // --- same as in mobile ---
+    // @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {}
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      display: flex;
+      text-align: left;
+    }
+    // --- Desktop - ^ ---
+  }
+
+  &__address-section {
+    width: $width--mobile;
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      width: calc($width--tablet / 2);
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      width: auto;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__address {
     margin-top: 20px;
     background-color: $background-black;
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      margin-left: 0px;
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      margin-left: 15px;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__address-list {
@@ -59,8 +113,25 @@
   }
 
   &__social-links {
-    margin: 12px 0 0 70px;
+    margin-top: 60px;
     padding: 0;
+    width: $width--mobile;
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      margin: auto;
+      margin-left: 0px;
+      width: calc($width--tablet / 2);
+      // width: 100px;
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      margin: 12px 0 0 70px;
+      width: auto;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__social-header {
@@ -103,8 +174,23 @@
   }
 
   &__newsletter {
-    margin: 12px 0 0 78px;
+    margin-top: 60px;
     padding: 0;
+    width: $width--mobile;
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      margin: 60px 0 0 0;
+      width: $width--tablet;
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      margin: 12px 0 0 78px;
+      width: auto;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__newsletter-header {
@@ -118,25 +204,62 @@
   }
 
   &__newsletter-box {
-    display: flex;
+    display: inline-block;
     margin-top: 20px;
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      display: flex;
+      flex-direction: column;
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      display: flex;
+      margin-top: 20px;
+      height: 50px;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__newsletter-input {
-    width: 358px;
-    height: 100%;
+    width: 450px;
+    height: 50px;
     border-radius: 4px;
     border: 1px solid $white-30opa;
     padding-left: 16px;
     background-color: $background-black;
     color: $white;
     opacity: 60%;
+
+    // --- Tablet - v ---
+    // --- same as in mobile ---
+    // @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {}
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      width: 358px;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__newsletter-btn {
-    margin-left: 12px;
+    margin: 20px auto 0px;
     width: 200px;
     height: 50px;
+
+    // --- Tablet - v ---
+    // --- same as in mobile ---
+    // @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {}
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      margin: 0 0 0 20px;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__newsletter-icon {

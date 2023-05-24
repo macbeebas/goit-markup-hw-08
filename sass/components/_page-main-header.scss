@@ -1,5 +1,6 @@
 /* SASS - _page-main-header.scss - v */
 .main-header {
+  outline: 5px solid pink;
   border: 1px solid $black;
   font-weight: 500;
   font-size: 14px;
@@ -16,6 +17,9 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
+
+
+  
   &__box {
     display: flex;
     flex-direction: column;
@@ -26,6 +30,23 @@
 
   &__title {
     font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    margin: 0 0 30px;
+
+    // --- Tablet - v ---
+    // --- same as in mobile ---
+    // @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {}
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop)
+    {
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
     letter-spacing: 0.06em;
@@ -33,6 +54,8 @@
     text-align: center;
     color: $white;
     margin: 0 0 30px;
+    }
+    // --- Desktop - ^ ---
   }
 }
 /* SASS - _page-main-header.scss - ^ */
