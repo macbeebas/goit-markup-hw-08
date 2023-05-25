@@ -1,12 +1,26 @@
 /* SASS - _our-clients.scss - v */
 .clients {
   &__list {
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: $white;
     list-style-type: none;
-    margin: 50px auto auto;
+    margin: 15px;
+    gap: 30px;
     padding-inline-start: 0;
+
+    // --- Tablet - v ---
+    // --- same as in mobile ---
+    // @media screen and (min-width: $width--tablet) and (max-width: $width--desktop)    {    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      display: flex;
+      margin: 50px auto auto;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__item {
@@ -16,12 +30,25 @@
     justify-content: center;
     align-items: center;
     fill: $gray-clients;
-    width: 170px;
+    width: 210px;
     height: 92px;
     transition-property: border, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      width: 226px;
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      width: 170px;
+    }
+    // --- Desktop - ^ ---
   }
+
   /* CUBIC */
   &__item:hover,
   &__item:focus {

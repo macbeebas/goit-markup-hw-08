@@ -1,6 +1,18 @@
 /* SASS - _what-we-do.scss - v */
 .activities {
-  background-color: $white;
+  display: none;
+
+  // --- Tablet - v ---
+  // --- same as in mobile ---
+  // @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {  }
+  // --- Tablet - ^ ---
+
+  // --- Desktop - v ---
+  @media screen and (min-width: $width--desktop) {
+    display: unset;
+    background-color: $white;
+  }
+  // --- Desktop - ^ ---
 
   &__list {
     display: flex;

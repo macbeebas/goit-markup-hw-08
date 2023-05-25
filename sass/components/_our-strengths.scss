@@ -4,17 +4,64 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    display: flex;
-    gap: 15px;
-    background-color: $white;
     list-style-type: none;
-    margin: auto;
+    margin: 0;
     padding-inline-start: 0;
+    padding: auto;
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      gap: 15px;
+      background-color: $white;
+      list-style-type: none;
+      margin: auto;
+      padding-inline-start: 0;
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      display: flex;
+      gap: 15px;
+      list-style-type: none;
+      padding-inline-start: 0;
+    }
+    // --- Desktop - ^ ---
+  }
+
+  &__list--item {
+    width: 450px;
+    margin: 0 auto 30px;
+    // margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      width: 354px;
+      display: inline-block;
+      margin: 14px;
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      width: 270px;
+      margin: auto;
+      display: inline-block;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__feature-box {
     background-color: $gray-light;
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -24,6 +71,37 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      width: 354px;
+      height: 120px;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      display: flex;
+      // justify-content: center;
+      // align-items: center;
+      transition-property: box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      background-color: $gray-light;
+      width: 270px;
+      height: 120px;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      display: flex;
+      // justify-content: center;
+      // align-items: center;
+      transition-property: box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    // --- Desktop - ^ ---
   }
   /* CUBIC */
   &__feature-box:hover,
@@ -34,6 +112,21 @@
   &__header {
     color: $black-main;
     margin: auto auto 5px;
+    text-align: center;
+
+    // --- Tablet - v ---
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      width: 100%;
+      text-align: left;
+    }
+    // --- Tablet - ^ ---
+
+    // --- Desktop - v ---
+    @media screen and (min-width: $width--desktop) {
+      width: 100%;
+      text-align: left;
+    }
+    // --- Desktop - ^ ---
   }
 
   &__text {

@@ -29,9 +29,13 @@ $background-black: #2f303a;
 $background-black-40opa: rgba($background-black, 0.4);
 $background-black-80opa: rgba($background-black, 0.8);
 
-$width--desktop: 1200px;
-$width--tablet: 768px;
 $width--mobile: 480px;
+$width--tablet: 768px;
+$width--desktop: 1200px;
 $width--min: 320px;
+
+$item-width--mobile: 450px;
+$item-width--tablet: 354px;
+$item-width--desktop: 270px;
 
 $container-width: 1200px;

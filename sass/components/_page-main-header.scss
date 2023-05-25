@@ -1,25 +1,77 @@
 /* SASS - _page-main-header.scss - v */
 .main-header {
-  outline: 5px solid pink;
   border: 1px solid $black;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.71;
   background-color: $background-black;
-  height: 600px;
+  height: 400px;
   display: flex;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-image: linear-gradient(
       to top,
       $background-black-40opa,
       $background-black-40opa
     ),
-    url("../images/header-background.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+    url("../images/header-background-m.jpg");
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to top,
+        $background-black-40opa,
+        $background-black-40opa
+      ),
+      url("../images/header-background-m@2x.jpg");
+  }
 
+  // --- Tablet - v ---
+  @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+    background-image: linear-gradient(
+        to top,
+        $background-black-40opa,
+        $background-black-40opa
+      ),
+      url("../images/header-background-t.jpg");
 
-  
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          $background-black-40opa,
+          $background-black-40opa
+        ),
+        url("../images/header-background-t@2x.jpg");
+    }
+  }
+  // --- Tablet - ^ ---
+
+  // --- Desktop - v ---
+  @media screen and (min-width: $width--desktop) {
+    height: 600px;
+    background-image: linear-gradient(
+        to top,
+        $background-black-40opa,
+        $background-black-40opa
+      ),
+      url("../images/header-background-d.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          $background-black-40opa,
+          $background-black-40opa
+        ),
+        url("../images/header-background-d@2x.jpg");
+    }
+  }
+  // --- Desktop - ^ ---
+
   &__box {
     display: flex;
     flex-direction: column;
@@ -44,16 +96,15 @@
     // --- Tablet - ^ ---
 
     // --- Desktop - v ---
-    @media screen and (min-width: $width--desktop)
-    {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.364;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    color: $white;
-    margin: 0 0 30px;
+    @media screen and (min-width: $width--desktop) {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.364;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      margin: 0 0 30px;
     }
     // --- Desktop - ^ ---
   }
