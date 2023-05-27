@@ -9,27 +9,18 @@
 }
 
 .container {
-  // --- Mobile first - v ---
   margin: 0 auto;
   width: $width--mobile;
-  background-color: green;
-  outline: 1px dashed gray;
-  // pomocniczy - zmienia się w zależności od punktu przerwania
-  // --- Mobile first - ^ ---
 
   // --- Tablet - v ---
   @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
     width: $width--tablet;
-    background-color: blue;
-    // pomocniczy - zmienia się w zależności od punktu przerwania
   }
   // --- Tablet - ^ ---
 
   // --- Desktop - v ---
   @media screen and (min-width: $width--desktop) {
     width: $width--desktop;
-    background-color: pink;
-    // pomocniczy - zmienia się w zależności od punktu przerwania
   }
   // --- Desktop - ^ ---
 }

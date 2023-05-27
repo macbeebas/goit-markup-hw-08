@@ -18,30 +18,27 @@
     padding-inline-start: 0;
 
     // --- Tablet - v ---
-    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop)
-    {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    padding: 0;
-    background-color: $gray-light;
-    list-style-type: none;
-    // margin: 50px auto auto;
-    padding-inline-start: 0;
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 0;
+      background-color: $gray-light;
+      list-style-type: none;
+      padding-inline-start: 0;
     }
     // --- Tablet - ^ ---
 
     // --- Desktop - v ---
-    @media screen and (min-width: $width--desktop)
-    {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    background-color: $gray-light;
-    list-style-type: none;
-    margin: 50px auto auto;
-    padding-inline-start: 0;
+    @media screen and (min-width: $width--desktop) {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      background-color: $gray-light;
+      list-style-type: none;
+      margin: 50px auto auto;
+      padding-inline-start: 0;
     }
     // --- Desktop - ^ ---
   }
@@ -53,25 +50,19 @@
       0px 2px 1px $black-20opa;
     display: flex;
     flex-direction: column;
-    // width: 270px;
     width: 450px;
-    // height: 428px;
 
     // --- Tablet - v ---
-    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop)
-    {
-    width: 354px;
+    @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
+      width: 354px;
     }
     // --- Tablet - ^ ---
 
     // --- Desktop - v ---
-    @media screen and (min-width: $width--desktop)
-    {
-    width: 270px;
+    @media screen and (min-width: $width--desktop) {
+      width: 270px;
     }
     // --- Desktop - ^ ---
-
-
   }
 
   &__image {

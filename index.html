@@ -25,15 +25,17 @@
         <a class="logo" href="./index.html"
           >Web<span class="logo--classic">Studio</span></a
         >
-        <nav>
+        <nav class="header__nav">
           <ul class="header__box-nav-list">
             <li>
-              <a class="header__nav--active" href="./index.html">Agencja</a>
+              <a class="header__nav-item--active" href="./index.html"
+                >Agencja</a
+              >
             </li>
             <li>
-              <a class="header__nav" href="./portfolio.html">Portfolio</a>
+              <a class="header__nav-item" href="./portfolio.html">Portfolio</a>
             </li>
-            <li><a class="header__nav" href="#">Kontakt</a></li>
+            <li><a class="header__nav-item" href="#">Kontakt</a></li>
           </ul>
         </nav>
         <ul class="header__contacts">
@@ -54,6 +56,15 @@
             >
           </li>
         </ul>
+        <!-- Burger Menu opener - v -->
+        <div class="menu-burger js-open-menu">
+          <button class="menu-burger__btn">
+            <svg width="40px" height="40px">
+              <use href="./images/icons.svg#icon-menu-40px"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- Burger Menu opener - ^ -->
       </div>
     </header>
 
@@ -502,7 +513,7 @@
       </div>
     </footer>
 
-    <!-- BACKDROP -->
+    <!-- BACKDROP & MODAL - v -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn--close" data-modal-close>
@@ -591,6 +602,54 @@
       </div>
     </div>
 
+    <!-- MOBILE Burger-Menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <!-- Button zamykający - X -->
+      <button class="menu-burger__btn js-close-menu">
+        <svg width="40px" height="40px">
+          <use href="./images/icons.svg#icon-close-40px"></use>
+        </svg>
+      </button>
+      <!-- HTML całego Menu Mobila -->
+      <ul class="mobile-menu">
+        <li><a class="mobile-menu__item" href="./index.html">Agencja</a></li>
+        <li>
+          <a class="mobile-menu__item" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="mobile-menu__item" href="">Kontakt</a></li>
+      </ul>
+      <ul class="mobile-menu__footer">
+        <li>
+          <a class="mobile-menu__phone" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <div>
+            <a class="mobile-menu__social padding--off" href="">Instagram</a>
+            <a class="mobile-menu__social" href="">Twitter</a>
+            <a class="mobile-menu__social" href="">Facebook</a>
+            <a class="mobile-menu__social border--off" href="">LinkedIn</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- JS for Mobile-menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
+    <!-- JS for Backdrop -->
     <script src="./js/modal.js"></script>
   </body>
 </html>

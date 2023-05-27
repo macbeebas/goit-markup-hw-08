@@ -6,6 +6,7 @@
   &__box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-weight: 500;
   }
 
@@ -28,8 +29,15 @@
     }
     // --- Desktop - ^ ---
   }
-
   &__nav {
+    display: none;
+
+    @media screen and (min-width: $width--tablet) {
+      display: inline;
+    }
+  }
+
+  &__nav-item {
     font-style: normal;
     text-decoration: none;
     color: $black-main;
@@ -39,12 +47,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   /* CUBIC */
-  &__nav:hover,
-  &__nav:focus {
+  &__nav-item:hover,
+  &__nav-item:focus {
     color: $blue;
   }
 
-  &__nav--active {
+  &__nav-item--active {
     font-style: normal;
     text-decoration: none;
     color: $blue;
@@ -54,7 +62,7 @@
     justify-content: center;
   }
 
-  &__nav--active::after {
+  &__nav-item--active::after {
     content: "";
     position: absolute;
     top: 77px;
