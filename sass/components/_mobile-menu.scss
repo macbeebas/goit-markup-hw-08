@@ -22,9 +22,17 @@
     }
   }
 
-  @media screen and (min-width: $width--tablet) {
+  // --- Tablet - v ---
+  @media screen and (min-width: $width--tablet) and (max-width: $width--desktop) {
     display: none;
   }
+  // --- Tablet - ^ ---
+
+  // --- Desktop - v ---
+  @media screen and (min-width: $width--desktop) {
+    display: none;
+  }
+  // --- Desktop - ^ ---
 }
 
 .menu-container {
